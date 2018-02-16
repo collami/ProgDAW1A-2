@@ -19,7 +19,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner sn = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
         boolean salir = false;
         int opcion; //Guardaremos la opcion del usuario
         ArrayList<Libro> listaLibros = new ArrayList<>();
@@ -33,7 +33,7 @@ public class Main {
             System.out.println("6. Salir");
 
             System.out.println("Escribe una de las opciones");
-            opcion = sn.nextInt();
+            opcion = teclado.nextInt();
 
             switch (opcion) {
                 case 1:

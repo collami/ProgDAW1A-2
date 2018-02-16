@@ -31,7 +31,7 @@ public class Libro {
         this.isbn = isbn;
         this.ejemplares = ejemplares;
         this.prestados = prestados;
-        Libro.ejemplaresTotales+=this.ejemplares;
+        Libro.ejemplaresTotales += this.ejemplares;
     }
 
     public Libro(Libro copia) {
@@ -40,7 +40,7 @@ public class Libro {
         this.isbn = copia.isbn;
         this.ejemplares = copia.ejemplares;
         this.prestados = 0;
-        Libro.ejemplaresTotales+=this.ejemplares;
+        Libro.ejemplaresTotales += this.ejemplares;
     }
 
     public String getTitulo() {
@@ -130,7 +130,7 @@ public class Libro {
         System.out.println("======================");
         System.out.println("   FICHA DEL LIBRO    ");
         System.out.println("======================");
-        System.out.println("TÃ­tulo: " + this.getAutor());
+        System.out.println("Título: " + this.getTitulo());
         System.out.println("Autor: " + this.getAutor());
         System.out.println("Ejemplares: " + this.getEjemplares());
         System.out.println("Ejemplares prestados: " + this.getPrestados());
@@ -140,10 +140,10 @@ public class Libro {
     static public Libro localizarLibro(ArrayList<Libro> listaLibros, String isbn) {
         boolean encontrado = false;
         int i = 0;
-        while (i < listaLibros.size() && encontrado==false ) {
+        while (i < listaLibros.size() && encontrado == false) {
             if (listaLibros.get(i).getIsbn().equals(isbn)) {
                 System.out.println("El ejemplar existe. Acción completada");
-                encontrado=true;
+                encontrado = true;
             } else {
                 i++;
             }
@@ -166,6 +166,8 @@ public class Libro {
         System.out.println("Introduce el número de ejemplares del libro: ");
         nuevoLibro.setEjemplares(teclado.nextInt());
         nuevoLibro.setPrestados(0);
+        Libro.ejemplaresTotales+=nuevoLibro.ejemplares;
+        Libro.prestadostotales+=nuevoLibro.prestados;
         return nuevoLibro;
     }
 }
