@@ -7,3 +7,7 @@ Contiene todos los ejercicios en ficheros java y un fichero comprimido en ZIP, c
 Contiene todos los ejercicios en ficheros java y un fichero comprimido en ZIP, con todo el proyecto para importar a NetBeans.
 ## Práctica 3: "Mi primera clase en Java".
 Contiene todos los ejercicios en ficheros java y un fichero comprimido en ZIP, con todo el proyecto para importar a NetBeans.
+## Práctica 4: "Clases y arraylist".
+Contiene todos los ejercicios en ficheros java y un fichero comprimido en ZIP, con todo el proyecto para importar a NetBeans.
+## Práctica 5: "Clases y arraylist. Red de Bibliotecas de Mallorca ".
+Contiene todos los ejercicios en ficheros java y un fichero comprimido en ZIP, con todo el proyecto para importar a NetBeans.
